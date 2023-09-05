@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "custom-pricing-app"
+client_id = "7a4e83136508341fdd38736608d529e0"
+application_url = "https://benjamin-machines-honduras-trinidad.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://benjamin-machines-honduras-trinidad.trycloudflare.com/auth/callback",
+  "https://benjamin-machines-honduras-trinidad.trycloudflare.com/auth/shopify/callback",
+  "https://benjamin-machines-honduras-trinidad.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "duyen-ltb-training-store.myshopify.com"
